@@ -1,0 +1,8 @@
+@use './variables' as *;
+
+:export{
+    cyan: $color-cyan;
+    red: $color-red;
+    orange: $color-orange;
+    blue: $color-blue;
+}

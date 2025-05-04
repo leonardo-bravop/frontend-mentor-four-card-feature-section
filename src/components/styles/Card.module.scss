@@ -1,0 +1,60 @@
+@use '../../styles/variables' as *;
+
+@mixin lg {
+    @media (width >= 64rem) { @content }
+}
+
+.card {
+    --card-color: $color-cyan;
+
+    position: relative;
+    width: 314px;
+    height: 250px;
+    background-color: $color-white;
+    padding: 2.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.8rem 1.2rem 0.1rem rgba($color-blue, 0.2);
+
+    @include lg {
+        width: 350px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 0.25rem;
+        background: var(--card-color);
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}
+
+.title {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.0125rem;
+    color: $color-gray-500;
+}
+
+.description {
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.3125rem;
+    letter-spacing: 0.7%;
+    color: $color-gray-400;
+
+    @include lg {
+        line-height: auto;
+    }
+}
+
+.iconContainer {
+    margin-top: 2rem;
+    text-align: right;
+}
