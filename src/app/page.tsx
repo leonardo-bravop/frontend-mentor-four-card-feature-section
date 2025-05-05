@@ -20,7 +20,7 @@ export default function Home() {
           <Card title="Supervisor" description="Monitors activity to identify project roadblocks" imageSrc={supervisorSrc.src} color={colors.cyan} gridArea={gridAreas[0]}/>
           <Card title="Team Builder" description="Scans our talent network to create the optimal team for your project" imageSrc={teamBuilderSrc.src} color={colors.red} gridArea={gridAreas[1]}/>
           <Card title="Karma" description="Regularly evaluates our talent to ensure quality" imageSrc={karmaSrc.src} color={colors.orange} gridArea={gridAreas[2]}/>
-          <Card title="Team Builder" description="Scans our talent network to create the optimal team for your project" imageSrc={calculatorSrc.src} color={colors.blue} gridArea={gridAreas[3]}/>
+          <Card title="Calculator" description="Uses data from past projects to provide better delivery estimates" imageSrc={calculatorSrc.src} color={colors.blue} gridArea={gridAreas[3]}/>
         </div>
       </main>
       <footer>
